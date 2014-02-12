@@ -486,7 +486,7 @@ int numMovesSoFar(grid newGrid) {
 
 int playerToNumber(char player) {
 
-   int playerNumber;
+   int playerNumber = 0;
    
    if (player == 0) {
       playerNumber = 0;
@@ -502,14 +502,6 @@ int playerToNumber(char player) {
 
 char numberToPlayer (int player) {
 
-   char playerChar;
-   
-   if (player == 1) {
-      playerChar = PLAYER_ONE;
-   } else if (player == 2) {
-      playerChar = PLAYER_TWO;
-   }
-   
-   return playerChar;
+   return player == 1 ? PLAYER_ONE : PLAYER_TWO;
 
 }
